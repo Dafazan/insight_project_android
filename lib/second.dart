@@ -59,6 +59,18 @@ class SecondPage extends StatelessWidget {
                     ),
                   ),
                 ),
+              ),
+              Column(
+                children: [
+                  Container(
+                    width: MediaQuery.of(context).size.width,
+                    height: 100,
+                    decoration: BoxDecoration(
+                      color: Colors.amber[300],
+                      borderRadius: BorderRadius.circular(4),
+                    ),
+                  )
+                ],
               )
             ],
           ),

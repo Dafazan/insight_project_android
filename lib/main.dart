@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:insight_project_android/login.dart';
 import 'package:insight_project_android/second.dart';
+import 'package:insight_project_android/third.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,7 +15,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Flutter Demo',
+        debugShowCheckedModeBanner: false,
+        title: 'DTCMOBILE',
         theme: ThemeData(
           // This is the theme of your application.
           //
@@ -31,7 +35,8 @@ class MyApp extends StatelessWidget {
           // tested with just a hot reload.
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
+          textTheme: GoogleFonts.sairaTextTheme(),
         ),
-        home: SecondPage());
+        home: LoginPage());
   }
 }
